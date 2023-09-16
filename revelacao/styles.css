@@ -1,0 +1,121 @@
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+    /*font-family: Arial, sans-serif;*/
+    font-family:'Merienda', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    
+    /*background-color: rgb(112, 230, 251) ;*/
+    background-image: url(./img/6493501.jpg);
+    /*background-image: linear-gradient( to right, rgb(149, 197, 255), rgb(246, 165, 255) );*/
+    background-position: center;
+
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .container {
+    padding: 40px;
+  }
+
+  button{
+
+    font-family: 'Merienda';
+    margin-top: 15%;
+    text-transform: capitalize;
+    text-decoration: none;
+    background-color: rgb(59, 133, 198);
+    color: #ffffff;
+    padding: 15px 40px;
+    font-size: 60px;
+    border: solid 2px rgb(255, 255, 255);
+    border-radius: 55px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-shadow: rgb(133, 166, 255) 1px 1px;
+
+    
+    /*background-color: transparent;
+    border-radius: 24px;
+    border: 3px solid rgba(257, 257, 257, .4);
+    backdrop-filter: blur(25px);*/
+}
+
+button:hover {
+  margin-top: 15%;
+  border: solid 2px rgb(255, 255, 255);
+  padding: 15px 40px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  border-radius: 55px;
+  background-color: rgb(255, 102, 252) ;
+  text-decoration: none;
+  font-size: 60px;
+  transition: 0.5s;
+  text-shadow: rgb(244, 205, 253) 1px 1px;
+}
+  
+  .hidden {
+    display: none;
+  }
+  
+  #countdown {
+    font-size: 200px;
+
+    color: rgba(255, 255, 255, 0.843);
+    text-shadow: black 1px 1px 5px;
+  }
+  
+  #animation {
+    padding-top: 5%;
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 1px 1px;
+  }
+  
+  #gender {
+    font-size: 24px;
+    margin-top: 20px;
+    color: white;
+    display: none;
+    position: relative;
+    background-size: cover;
+  }
+
+  #ballerine {
+    position: fixed;
+    top: 90%;
+    left: 80%;
+    display: none;
+  }
+
+  #boy {
+    color: rgb(59, 133, 198);
+    font-size: 130px;
+    text-shadow: rgb(255, 255, 255) 1px 1p;
+  }
+
+  #girl {
+    color: rgb(255, 102, 252);
+    font-size: 130px;
+    text-shadow: rgb(255, 255, 255) 1px 1px;
+  }
+
+  .gender-image {
+    position: absolute;
+    top: -10px;
+    background-size: cover;
+  }
+  
+  #cont {
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    text-shadow: rgb(0, 0, 0) 1px 1px 20px;
+    margin-top: 70px;
+  }

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Clique Aqui</title>
+
+  <link rel="icon" href="data:,">
+  <link rel="shortcut icon" href="./revelacao/icon/pacifier_8881810.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Dancing+Script:wght@400;500;600;700&family=Marck+Script&family=Merienda:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;700&family=Preahvihear&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family:'Merienda', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+
+            background-image: url(./revelacao/img/6493501.jpg);
+            margin: 0;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            position: relative;
+            background-size: cover;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-position: center;
+
+            
+        }
+
+        #botao {
+            width: 300px;
+            height: 100px;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: absolute;
+            background-color: rgb(59, 133, 198);
+            color: #ffffff;
+            padding: 15px 40px;
+            border: solid 5px rgb(255, 255, 255);
+            border-radius: 75px;
+            transition: 0.1s;
+            font-size: 70px;
+
+        
+        }
+    </style>
+</head>
+<body>
+    <div id="botao" onmouseover="moverBotao()">Iniciar</div>
+
+    <script>
+        var botao = document.getElementById("botao");
+        var movimentos = 0;
+
+        function moverBotao() {
+            if (movimentos < 12) {
+                var novaPosicaoX = Math.random() * (window.innerWidth - botao.clientWidth);
+                var novaPosicaoY = Math.random() * (window.innerHeight - botao.clientHeight);
+
+                botao.style.left = novaPosicaoX + "px";
+                botao.style.top = novaPosicaoY + "px";
+                movimentos++;
+            } else {
+                // Remova o botão
+                botao.style.display = "none";
+                // Crie e exiba a frase
+                var frase = document.createElement("div");
+                frase.textContent = "Como vocês são curiosos?";
+                frase.style.fontSize = "84px";
+                frase.style.color = "fuchasonic";
+                frase.style.position = "absolute";
+                frase.style.top = "40%";
+                frase.style.transform = "translateY(-50%)";
+                document.body.appendChild(frase);
+                // Crie e exiba um novo botão para a próxima página
+                var botaoProximaPagina = document.createElement("button");
+                botaoProximaPagina.textContent = "Agora vai, eu prometo!";
+                botaoProximaPagina.style.width = "800px";
+                botaoProximaPagina.style.height = "180px";
+                botaoProximaPagina.style.backgroundColor =  "rgb(59, 133, 198)";
+                botaoProximaPagina.style.color = "white";
+                botaoProximaPagina.style.textAlign = "center";
+                botaoProximaPagina.style.lineHeight = "50px";
+                botaoProximaPagina.style.cursor = "pointer";
+                botaoProximaPagina.style.position = "absolute";
+                botaoProximaPagina.style.top = "60%";
+                botaoProximaPagina.style.left = "calc(33% - 95px)";
+                botaoProximaPagina.style.borderRadius = "75px";
+                botaoProximaPagina.style.fontSize = "60px";
+                botaoProximaPagina.style.fontFamily = "Merienda";
+                botaoProximaPagina.onclick = function() {
+                    window.location.href = "./estaoTodosProntos.html"; // Substitua "proxima_pagina.html" pelo URL da próxima página
+                };
+                document.body.appendChild(botaoProximaPagina);
+            }
+        }
+    </script>
+</body>
+</html>
