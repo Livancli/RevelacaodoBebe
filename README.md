@@ -1,5 +1,7 @@
 # Projeto Revelação Chá de Bebê - README
 
+![Projeto Revelação Chá de Bebê](./revelacao/icon/pacifier_8881810.png)
+
 Este é um projeto de revelação de gênero para um chá de bebê, desenvolvido utilizando HTML5, CSS3 e JavaScript. O projeto consiste em uma página web interativa que permite ao usuário clicar em um botão para revelar o gênero do bebê de uma forma criativa. Abaixo estão os detalhes sobre as páginas e os recursos utilizados no projeto.
 
 ## Páginas do Projeto
